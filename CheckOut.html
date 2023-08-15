@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!-- I declare that this code was written by me. 
+I will not copy or allow others to copy my code. 
+I understand that copying code is considered as plagiarism.
+
+Student Name: Sarreal Jose Gabriel Mayo
+Student ID: 22008892
+Class: C369-1D-E63C-A -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <!--Bootstrap CSS Link-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Transaction Verification</title>
+</head>
+<body>
+    <style>
+        #topnav{
+        background-color: #FFBF69;
+        box-shadow: 0px 0px 5px 2px black;
+
+        }
+        #mini-logo{
+            width: 80px;
+            padding: 10px 15px;
+        }
+        #top-buttons{
+            padding: 10px 15px;
+            font-size: 15px;
+            font-family:  helvetica;
+            border: none;
+            background-color:#FFBF69; 
+            position: center;
+            font-weight: bold;
+            color: white;
+            border-radius: 15px;
+            
+
+        }
+        #top-buttonsright{
+            padding: 23px 15px;
+            font-size: 15px;
+            font-family:  helvetica;
+            border: none;
+            background-color:#FFBF69; 
+            position: center;
+            color: white;
+            float: right;
+            font-weight: bold;
+
+        }
+        #mainbox{
+            text-align: center;
+        }
+        #box1{
+            border-color: black;
+            border-width: 5px;
+            border-style: solid;
+        }
+        #box2{
+            border-color: black;
+            border-width: 5px;
+            border-style: solid;
+        }
+        #image{
+            width: 270px;
+            height: 270px;
+            padding: 10px 15px;
+            border: none;
+            outline: none;
+            background-color:white;
+
+
+        }
+        #sides{
+            text-align: center;
+        }
+        #leftbox{
+            text-align: center;
+            background-color: #FFBF69;
+            padding: 5px,5px;
+        }
+        #rightbox{
+            text-align: center;
+        }
+        #bigbox{
+            border-color: #FFBF69;
+            border-radius: 20px;
+            box-shadow: 0px 0px 5px 2px black;
+            padding: 5px,5px;
+        }
+        h1{
+            padding: 22px 15px;
+            
+        }
+        #buttonsub{
+            padding: 22px 15px;
+        }
+        
+
+    </style>
+        <section>
+            <nav id="topnav">
+                <a href="Services.html"><img id="mini-logo" src="images/SwiftWire Logo.png"/></a> 
+                <!-- <a href="ServicesDes.html"><button id="top-buttons" onclick=a href="ServicesDes.html">Services</button></a> -->
+                <!-- <a href="Services.html"><button id="top-buttons" onclick=a href="Services.html">Services</button></a> -->
+                <!-- <a href="HomePage.html"><button id="Center" onclick=a href="HomePage.html">SwiftWire</button></a>  -->
+                <a href="ContactUs.html"><button id="top-buttonsright" onclick=a href="ContactUs.html">Contact Us</button></a>
+            </nav>
+        </section>
+        <br>
+        <nav>
+       <button style="width: 50px;height: 30px;background-color: #ffd8a4;border: none; border-radius: 8px;font-weight: bold;" onclick="history.back()"><--</button>
+        </nav>
+        </section>
+        <section>
+            <div id = "bigbox" class="container">
+                  <div class="row">
+                    <div id="leftbox" class="col-sm-4">
+                        <h1>
+                            SarrealWire
+                        <h1>
+                            <br>
+
+                        <img src="images/SwiftWire Logo.png" alt="SWLogo"/>
+                        
+                    </div>
+                    <div id="rightbox" class="col-sm-8">
+                      <form action="">
+                        <h1>CheckOut</h1>
+                        <h2>Payment Information</h2>
+                        <p>Cardholder Name</p>
+                        <input type="text" class="inputbox" name="name" required />
+                        <p>Card Number</p>
+                        <input type="number" class="inputbox" name="card_number" id="card_number" required />
+            
+                        <p>Card Type</p>
+                        <select class="inputbox" name="card_type" id="card_type" required>
+                          <option value="">--Select a Card Type--</option>
+                          <option value="Visa">Visa</option>
+                          <option value="RuPay">Amex</option>
+                          <option value="MasterCard">MasterCard</option>
+                        </select>
+                        <div class="expcvv">
+            
+                        <p class="expcvv_text">Expiry</p>
+                        <input type="date" class="inputbox" name="exp_date" id="exp_date" required />
+            
+                        <p class="expcvv_text2">CVV</p>
+                        <input type="password" class="inputbox" name="cvv" id="cvv" required />
+                    </div>
+                        <p></p>
+                        <button type="submit" class="button" onclick="CheckoutSuccess()">CheckOut</button>
+                        <script>
+                            function CheckoutSuccess(){
+                                window.location = 'TransactionConfirmation.html';
+                            }
+                        </script>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+        </section>
+</body>
+</html>

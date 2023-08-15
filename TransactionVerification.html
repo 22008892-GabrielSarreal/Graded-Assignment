@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!-- I declare that this code was written by me. 
+I will not copy or allow others to copy my code. 
+I understand that copying code is considered as plagiarism.
+
+Student Name: Sarreal Jose Gabriel Mayo
+Student ID: 22008892
+Class: C369-1D-E63C-A -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <!--Bootstrap CSS Link-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Transaction Verification</title>
+</head>
+<body>
+    <style>
+        #topnav{
+        background-color: #FFBF69;
+        box-shadow: 0px 0px 5px 2px black;
+
+        }
+        #mini-logo{
+            width: 80px;
+            padding: 10px 15px;
+        }
+        #top-buttons{
+            padding: 10px 15px;
+            font-size: 15px;
+            font-family:  helvetica;
+            border: none;
+            background-color:#FFBF69; 
+            position: center;
+            font-weight: bold;
+            color: white;
+            border-radius: 15px;
+            
+
+        }
+        #top-buttonsright{
+            padding: 23px 15px;
+            font-size: 15px;
+            font-family:  helvetica;
+            border: none;
+            background-color:#FFBF69; 
+            position: center;
+            color: white;
+            float: right;
+            font-weight: bold;
+
+        }
+        #mainbox{
+            text-align: center;
+        }
+        #box1{
+            border-color: black;
+            border-width: 5px;
+            border-style: solid;
+        }
+        #box2{
+            border-color: black;
+            border-width: 5px;
+            border-style: solid;
+        }
+        #image{
+            width: 270px;
+            height: 270px;
+            padding: 10px 15px;
+            border: none;
+            outline: none;
+            background-color:white;
+
+
+        }
+        #sides{
+            text-align: center;
+        }
+
+    </style>
+        <section>
+            <nav id="topnav">
+                <a href="Services.html"><img id="mini-logo" src="images/SwiftWire Logo.png"/></a> 
+                <!-- <a href="ServicesDes.html"><button id="top-buttons" onclick=a href="ServicesDes.html">Services</button></a> -->
+                <!-- <a href="Services.html"><button id="top-buttons" onclick=a href="Services.html">Services</button></a> -->
+                <!-- <a href="HomePage.html"><button id="Center" onclick=a href="HomePage.html">SwiftWire</button></a>  -->
+                <a href="ContactUs.html"><button id="top-buttonsright" onclick=a href="ContactUs.html">Contact Us</button></a>
+            </nav>
+        </section>
+        <br>
+        <nav>
+       <button style="width: 50px;height: 30px;background-color: #ffd8a4;border: none; border-radius: 8px;font-weight: bold;" onclick="history.back()"><--</button>
+        </nav>
+        <h1 style="text-align: center;">
+            Select Method Of Verification
+        </h1>
+        <p style="text-align: center;">
+            Click the Button
+        </p>
+        <br>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div id="sides" class="col-sm-6">
+                        <p>
+                            FaceID Verification
+                        </p>
+                        <button style="border: none;outline: none;background-color:white;"onclick="FaceID()"><img id ="image" style="position: relative;left: 20px;" src="Images/faceID.png"></button>
+                    </div>
+                    <div  id="sides" class="col-sm-6">
+                        <p>
+                            SMS Verification
+                        </p>
+                        <button style="border: none;outline: none;background-color:white;" onclick="sms()"><img id ="image" src="Images/message.png"></button>
+                        <p id="smscode"></p>
+                    </div>
+                    <script>
+                        function sms(){
+                            alert("SMS, Please enter message code")
+                            window.location = 'TextMessageCode.html';
+
+                        }
+                        function FaceID(){
+                            alert("Identity Verified, Please Proceed to Payment Page")
+                            window.location = 'CheckOut.html';
+                        }
+                    </script>
+                </div>
+            </div>
+        </section>
+</body>
+</html>

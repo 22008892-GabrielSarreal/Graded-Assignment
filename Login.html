@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<!-- I declare that this code was written by me. 
+I will not copy or allow others to copy my code. 
+I understand that copying code is considered as plagiarism.
+
+Student Name: Sarreal Jose Gabriel Mayo
+Student ID: 22008892
+Class: C369-1D-E63C-A -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <!--Bootstrap CSS Link-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Login Page</title>
+</head>
+<body>
+    <style>
+        nav{
+            background-color: #FFBF69;
+            box-shadow: 0px 0px 5px 2px black;
+
+        }
+        #mini-logo{
+            width: 80px;
+            padding: 10px 15px;
+        }
+        #top-buttons{
+            padding: 10px 15px;
+            font-size: 15px;
+            font-family:  helvetica;
+            border: none;
+            background-color:#FFBF69; 
+            position: center;
+            font-weight: bold;
+            color: white;
+            border-radius: 15px;
+            
+
+        }
+        #top-buttonsright{
+            padding: 23px 15px;
+            font-size: 15px;
+            font-family:  helvetica;
+            border: none;
+            background-color:#FFBF69; 
+            position: center;
+            color: white;
+            float: right;
+            font-weight: bold;
+
+        }
+        #form{
+            width: 25%;
+            align-items: center;
+            /* background-color: #FFBF69; */
+            border-radius: 7px;
+            text-align: center;
+            box-shadow: 0px 0px 5px 2px #FFBF69;
+            font-weight: bold;
+            padding: 16px;
+            position: relative;
+            left: 37%;
+            top: 90px;
+
+
+        }
+        input{
+            border-radius: 7px;
+            box-shadow: 0px 0px 1px 1px #FFBF69;
+            border: none;
+            text-align: center;
+
+        }
+        label{
+            display:block;
+        }
+    </style>
+    <section>
+        <nav>
+            <a href="index.html"><img id="mini-logo" src="images/SwiftWire Logo.png"/></a> 
+            <!-- <a href="ServicesDes.html"><button id="top-buttons" onclick=a href="ServicesDes.html">Services</button></a> -->
+            <a href="Login.html"><button id="top-buttons" onclick=a href="Login.html">Login</button></a>
+            <a href="Register.html"><button id="top-buttons" onclick=a href="Register.html">Register</button></a>
+            <!-- <a href="HomePage.html"><button id="Center" onclick=a href="HomePage.html">SwiftWire</button></a>  -->
+            <a href="ContactUs.html"><button id="top-buttonsright" onclick=a href="ContactUs.html">Contact Us</button></a>
+        </nav>
+    </section>
+    <br>
+    <button style="width: 50px;height: 30px;background-color: #ffd8a4;border: none; border-radius: 8px;font-weight: bold;" onclick="history.back()"><--</button>
+    <!--Register Form-->
+    <div class = "row">
+        <section id = form>
+            <form>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type = "text" placeholder="abc@swiftwire.com" id="email"/>
+                    </div>
+                    <div>
+                        <label for="psw">Password:</label>
+                        <input type = "text" placeholder="Enter Password" id="psw"/>
+                    </div>
+                    <div>
+                        <label for="phone">Phone No:</label>
+                        <input type = "text" placeholder="+65 91023424" id="phone"/>
+                    </div>
+    
+              </form>
+              <br>
+              <div style="text-align: center;">
+                <button id="top-buttons" style="background-color: #FFBF69;box-shadow: 0px 0px 1px 1px black;" onclick="Login()"  id = "but">Login</button>
+            </div>
+            <br>
+            <div>
+                <p>
+                    Forgot Password:
+                </p>
+                <button id="top-buttons" style="background-color: #FFBF69;box-shadow: 0px 0px 1px 1px black; " onclick="ForgotPassword()"  id = "but">Click here</button>
+            </div>
+            <script>
+                function Login() {
+                    alert("Login Successful")
+                    window.location = 'Services.html';
+                }
+                function ForgotPassword() {
+                    alert("Instructions have been sent via email")
+                    window.location = 'HomePage.html';
+                }
+                
+            </script>
+        </section>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+        <button style="text-align: center;border: none;background-color: white;" onclick="Login()">
+            <img style="width: 15%;position: relative;" src="images/LoginQRCode.jpg"/>
+        </button>
+    </div>
+
+   
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+</body>
+<footer style="text-align: center;">
+    <p>
+        This website is done by Gabriel Sarreal with student ID:22008892
+    </p>
+</footer>
+</html>
